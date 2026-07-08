@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta charset="utf-8">
+  <title>1450 N Dixie Downs Rd, Lot 56 — St. George, Utah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; background: #F7F2E9; }
+    a { color: #2A2824; }
+    a:hover { color: #B96F4C; }
+    ::selection { background: #DCE0D3; }
+  </style>
+</helmet>
+
+<div data-screen-label="Hero" style="min-height: 100vh; background: #F7F2E9; color: #2A2824; font-family: 'Karla', sans-serif; display: flex; flex-direction: column;">
+
+  <!-- Full-bleed photo -->
+  <div style="position: relative; width: 100%; height: 51vh; min-height: 400px; overflow: hidden;">
+    <img src="images/exterior-v2.png" alt="The home at Lot 56, Canyon View — a well-kept 1988 manufactured home in warm evening light" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 58% 42%; display: block;">
+  </div>
+
+  <!-- Content band -->
+  <div style="flex: 1; display: flex; flex-direction: column; gap: 0; padding: 48px 48px 52px 48px;">
+
+    <!-- Headline -->
+    <h1 style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(36px, 3.2vw, 52px); line-height: 1.12; margin: 0 0 22px 0; letter-spacing: -0.01em; text-wrap: balance;">
+      Thoughtfully Cared&nbsp;For. <em style="font-style: italic; font-weight: 400;">Ready for Its Next Chapter.</em>
+    </h1>
+
+    <!-- Address, body, buttons -->
+    <div style="display: flex; flex-direction: column; gap: 20px;">
+      <div style="font-size: 16px; line-height: 1.55; font-weight: 500; color: #2A2824;">
+        1450 N Dixie Downs Rd.<br>
+        Lot 56<br>
+        St. George, Utah
+      </div>
+      <p style="font-size: 15.5px; line-height: 1.7; font-weight: 300; color: #4A463F; max-width: 62ch; margin: 0; text-wrap: pretty;">
+        A thoughtfully maintained three-bedroom, two-bath home in Canyon View with inviting indoor and outdoor living spaces, ready for its next owners to make it their own.
+      </p>
+      <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-top: 6px;">
+        <a href="#home" style="display: inline-flex; align-items: center; background: {{ accent }}; color: #F7F2E9; text-decoration: none; font-size: 14px; letter-spacing: 0.04em; font-weight: 500; padding: 14px 26px; border-radius: 2px; white-space: nowrap; transition: filter 0.25s ease;" style-hover="filter: brightness(0.92); color: #F7F2E9;">View the Home</a>
+        <a onClick="{{ openModal }}" style="display: inline-flex; align-items: center; color: #2A2824; text-decoration: none; cursor: pointer; font-size: 14px; letter-spacing: 0.04em; font-weight: 500; padding: 13px 26px; border: 1px solid #C9C2B4; border-radius: 2px; white-space: nowrap; transition: border-color 0.25s ease;" style-hover="border-color: #2A2824; color: #2A2824;">Schedule a Private Showing</a>
+      </div>
+    </div>
+
+    <!-- Facts -->
+    <div style="display: flex; align-items: center; justify-content: center; gap: 48px; flex-wrap: wrap; margin-top: 40px;">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <svg width="26" height="26" viewBox="0 0 34 34" fill="none" stroke="{{ accent }}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 26v-9c0-1.7 1.3-3 3-3h18c1.7 0 3 1.3 3 3v9"></path><path d="M5 26h24"></path><path d="M5 26v2M29 26v2"></path><path d="M8 14v-4c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v4"></path><path d="M11 14v-2c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v2M17 14v-2c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v2"></path></svg>
+        <span style="font-size: 15px; color: #2A2824; white-space: nowrap;"><span style="font-weight: 600;">3</span> <span style="font-weight: 400; color: #6E6A61;">Bedrooms</span></span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <svg width="26" height="26" viewBox="0 0 34 34" fill="none" stroke="{{ accent }}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h24"></path><path d="M7 17v3c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5v-3"></path><path d="M11 25l-1 3M23 25l1 3"></path><path d="M7 17V8.5C7 7.1 8.1 6 9.5 6S12 7.1 12 8.5V9"></path></svg>
+        <span style="font-size: 15px; color: #2A2824; white-space: nowrap;"><span style="font-weight: 600;">2</span> <span style="font-weight: 400; color: #6E6A61;">Bathrooms</span></span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <svg width="26" height="26" viewBox="0 0 34 34" fill="none" stroke="{{ accent }}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="8" width="22" height="20" rx="2"></rect><path d="M6 14h22"></path><path d="M12 5v5M22 5v5"></path></svg>
+        <span style="font-size: 15px; color: #2A2824; white-space: nowrap;"><span style="font-weight: 600;">Built</span> <span style="font-weight: 400; color: #6E6A61;">1988</span></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Section 02 — The Home Story -->
+<section data-screen-label="The Home Story" style="background: #F7F2E9; color: #2A2824; font-family: 'Karla', sans-serif; padding: 110px 48px 0 48px;">
+  <div style="display: flex; flex-wrap: wrap; gap: 64px 88px; align-items: center; max-width: 1360px; margin: 0 auto;">
+
+    <!-- Left: story -->
+    <div style="flex: 1 1 400px; min-width: 320px;">
+      <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 26px;">
+        <span style="display: block; width: 36px; height: 1px; background: {{ accent }};"></span>
+        <span style="font-size: 12.5px; letter-spacing: 0.22em; text-transform: uppercase; color: {{ accent }}; font-weight: 600;">Our Story</span>
+      </div>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(32px, 2.6vw, 44px); line-height: 1.15; margin: 0 0 26px 0; letter-spacing: -0.01em; text-wrap: balance;">
+        A Home That Has Been <em style="font-style: italic; font-weight: 400;">Thoughtfully Cared&nbsp;For.</em>
+      </h2>
+      <div style="display: flex; flex-direction: column; gap: 18px; font-size: 15.5px; line-height: 1.75; font-weight: 300; color: #4A463F; max-width: 56ch;">
+        <p style="margin: 0; text-wrap: pretty;">Some homes simply provide shelter. Others quietly become part of the lives lived within them.</p>
+        <p style="margin: 0; text-wrap: pretty;">This home has been thoughtfully maintained over the years, with updates that prioritize comfort, functionality, and easy living. From the inviting living spaces to the private outdoor patio and covered parking, every improvement reflects consistent care rather than quick renovation.</p>
+        <p style="margin: 0; text-wrap: pretty;">Whether you're downsizing, relocating, or looking for a comfortable place to call home in St.&nbsp;George, this property offers an opportunity to begin your own next chapter.</p>
+      </div>
+    </div>
+
+    <!-- Right: editorial collage -->
+    <div style="flex: 1 1 460px; min-width: 340px; position: relative; height: 620px;">
+      <img src="images/living-room.jpeg" alt="The living room — warm wood floors and generous natural light" style="position: absolute; top: 0; left: 0; width: 68%; height: 46%; object-fit: cover; display: block;">
+      <img src="images/kitchen.jpeg" alt="The kitchen — butcher-block counters and updated flooring" style="position: absolute; top: 14%; right: 0; width: 36%; height: 52%; object-fit: cover; display: block; border: 6px solid #F7F2E9;">
+      <img src="images/patio.jpeg" alt="The private backyard patio — fenced, shaded, and ready for gatherings" style="position: absolute; bottom: 0; left: 8%; width: 58%; height: 42%; object-fit: cover; object-position: center 65%; display: block; border: 6px solid #F7F2E9;">
+    </div>
+  </div>
+
+  <div style="height: 78px;"></div>
+</section>
+
+<!-- Section 03 — Property Highlights -->
+<section data-screen-label="Property Highlights" style="background: #F7F2E9; color: #2A2824; font-family: 'Karla', sans-serif; padding: 96px 48px 0 48px;">
+  <div style="max-width: 1360px; margin: 0 auto;">
+
+    <div style="max-width: 640px;">
+      <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 26px;">
+        <span style="display: block; width: 36px; height: 1px; background: {{ accent }};"></span>
+        <span style="font-size: 12.5px; letter-spacing: 0.22em; text-transform: uppercase; color: {{ accent }}; font-weight: 600;">Property Highlights</span>
+      </div>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(32px, 2.6vw, 44px); line-height: 1.15; margin: 0 0 22px 0; letter-spacing: -0.01em; text-wrap: balance;">
+        Everything You Need. <em style="font-style: italic; font-weight: 400;">Nothing You Don't.</em>
+      </h2>
+      <p style="font-size: 15.5px; line-height: 1.75; font-weight: 300; color: #4A463F; margin: 0; text-wrap: pretty;">
+        Thoughtful updates, practical features, and comfortable spaces come together to create a home that's easy to enjoy from the day you move in.
+      </p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 64px 72px; margin-top: 62px;">
+
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <svg width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="{{ accent }}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"></path><path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"></path><path d="M12 4v6"></path><path d="M2 18h20"></path></svg>
+        <div style="font-size: 16px; font-weight: 600; letter-spacing: 0.02em;">3 Bedrooms</div>
+        <p style="font-size: 15px; line-height: 1.7; font-weight: 300; color: #4A463F; margin: 0; max-width: 40ch; text-wrap: pretty;">Comfortable layout with space for family, guests, or a dedicated office.</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <svg width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="{{ accent }}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 4 8 6"></path><path d="M17 19v2"></path><path d="M2 12h20"></path><path d="M7 19v2"></path><path d="M9 5 7.621 3.621A2.121 2.121 0 0 0 4 5v7"></path><path d="M19 12v5a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-5"></path></svg>
+        <div style="font-size: 16px; font-weight: 600; letter-spacing: 0.02em;">2 Bathrooms</div>
+        <p style="font-size: 15px; line-height: 1.7; font-weight: 300; color: #4A463F; margin: 0; max-width: 40ch; text-wrap: pretty;">Two full bathrooms designed for everyday convenience.</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <svg width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="{{ accent }}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path><circle cx="7" cy="17" r="2"></circle><path d="M9 17h6"></path><circle cx="17" cy="17" r="2"></circle></svg>
+        <div style="font-size: 16px; font-weight: 600; letter-spacing: 0.02em;">Full-Length Covered Parking</div>
+        <p style="font-size: 15px; line-height: 1.7; font-weight: 300; color: #4A463F; margin: 0; max-width: 40ch; text-wrap: pretty;">Full-length covered parking helps protect your vehicle from Southern Utah sun.</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <svg width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="{{ accent }}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12a10.06 10.06 0 0 0-20 0Z"></path><path d="M12 12v8a2 2 0 0 0 4 0"></path><path d="M12 2v1"></path></svg>
+        <div style="font-size: 16px; font-weight: 600; letter-spacing: 0.02em;">Private Outdoor Patio</div>
+        <p style="font-size: 15px; line-height: 1.7; font-weight: 300; color: #4A463F; margin: 0; max-width: 40ch; text-wrap: pretty;">A fenced outdoor living space perfect for relaxing, entertaining, or enjoying quiet mornings.</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <svg width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="{{ accent }}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+        <div style="font-size: 16px; font-weight: 600; letter-spacing: 0.02em;">Thoughtfully Maintained</div>
+        <p style="font-size: 15px; line-height: 1.7; font-weight: 300; color: #4A463F; margin: 0; max-width: 40ch; text-wrap: pretty;">Consistent care and pride of ownership are evident throughout the home.</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <svg width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="{{ accent }}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        <div style="font-size: 16px; font-weight: 600; letter-spacing: 0.02em;">Established All-Age Community</div>
+        <p style="font-size: 15px; line-height: 1.7; font-weight: 300; color: #4A463F; margin: 0; max-width: 40ch; text-wrap: pretty;">Located within Canyon View, an established all-age community offering convenient access to shopping, dining, healthcare, and everyday services throughout St.&nbsp;George.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 88px;"></div>
+</section>
+
+<!-- Section 04 — Editorial Home Tour -->
+<section data-screen-label="Home Tour" id="details" style="background: #F7F2E9; color: #2A2824; font-family: 'Karla', sans-serif; padding: 96px 48px 0 48px;">
+  <div style="max-width: 1360px; margin: 0 auto;">
+
+    <div style="max-width: 640px;">
+      <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 26px;">
+        <span style="display: block; width: 36px; height: 1px; background: {{ accent }};"></span>
+        <span style="font-size: 12.5px; letter-spacing: 0.22em; text-transform: uppercase; color: {{ accent }}; font-weight: 600;">Home Tour</span>
+      </div>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(32px, 2.6vw, 44px); line-height: 1.15; margin: 0 0 22px 0; letter-spacing: -0.01em; text-wrap: balance;">
+        Take a Walk <em style="font-style: italic; font-weight: 400;">Through the Home.</em>
+      </h2>
+      <p style="font-size: 15.5px; line-height: 1.75; font-weight: 300; color: #4A463F; margin: 0; text-wrap: pretty;">
+        Every room tells part of the story. Explore the spaces that make this home comfortable, practical, and ready for its next chapter.
+      </p>
+    </div>
+
+    <!-- Movement 1 — Primary suite -->
+    <div style="display: flex; flex-wrap: wrap; gap: 56px 72px; align-items: flex-start; margin-top: 80px;">
+      <div style="flex: 3 1 480px; min-width: 320px; display: flex; flex-direction: column; gap: 14px;">
+        <div style="width: 100%; height: 560px; overflow: hidden;">
+          <img src="images/primary-bedroom.jpeg" alt="The primary bedroom — spacious, with room for a full furniture suite" style="width: 100%; height: 100%; object-fit: cover; object-position: center 68%; transform: scale(1.05); transform-origin: center 68%; display: block;">
+        </div>
+        <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #6E6A61; font-weight: 500;">Primary Suite</span>
+      </div>
+      <div style="flex: 2 1 320px; min-width: 280px; display: flex; flex-direction: column; gap: 14px; margin-top: 96px;">
+        <img src="images/primary-bath.jpeg" alt="The primary bathroom — walk-in shower and updated vanity" style="width: 100%; height: 464px; object-fit: cover; display: block;">
+        <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #6E6A61; font-weight: 500;">Primary Bath</span>
+      </div>
+    </div>
+
+    <!-- Movement 2 — Guest quarters -->
+    <div style="display: flex; flex-wrap: wrap; gap: 56px 72px; align-items: flex-start; margin-top: 96px;">
+      <div style="flex: 2 1 320px; min-width: 280px; display: flex; flex-direction: column; gap: 14px; margin-top: 72px;">
+        <img src="images/guest-bath.jpeg" alt="The guest bathroom — tub and shower with updated flooring" style="width: 100%; height: 440px; object-fit: cover; display: block;">
+        <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #6E6A61; font-weight: 500;">Guest Bathroom</span>
+      </div>
+      <div style="flex: 3 1 440px; min-width: 320px; display: flex; flex-direction: column; gap: 14px;">
+        <img src="images/guest-bedroom.jpeg" alt="The guest bedroom — comfortable and light-filled" style="width: 100%; height: 520px; object-fit: cover; object-position: center 58%; display: block;">
+        <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #6E6A61; font-weight: 500;">Guest Bedroom</span>
+      </div>
+    </div>
+
+    <!-- Movement 3 — The practical spaces -->
+    <div style="display: flex; flex-wrap: wrap; gap: 56px 72px; align-items: flex-start; margin-top: 96px;">
+      <div style="flex: 1.2 1 320px; min-width: 280px; display: flex; flex-direction: column; gap: 14px; margin-top: 44px;">
+        <img src="images/laundry.jpeg" alt="The laundry room — full-size washer and dryer with direct outdoor access" style="width: 100%; height: 452px; object-fit: cover; display: block;">
+        <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #6E6A61; font-weight: 500;">Laundry</span>
+      </div>
+      <div style="flex: 2 1 460px; min-width: 320px; display: flex; flex-direction: column; gap: 14px;">
+        <img src="images/carport.jpeg" alt="The full-length covered parking — with storage shed beyond" style="width: 100%; height: 500px; object-fit: cover; object-position: center 55%; display: block;">
+        <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #6E6A61; font-weight: 500;">Covered Parking &amp; Storage</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 88px;"></div>
+</section>
+
+<!-- Section 05 — Community & Lifestyle -->
+<section data-screen-label="Community &amp; Lifestyle" id="community" style="background: #F7F2E9; color: #2A2824; font-family: 'Karla', sans-serif; padding: 96px 48px 0 48px;">
+  <div style="max-width: 1360px; margin: 0 auto;">
+
+    <div style="max-width: 640px;">
+      <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 26px;">
+        <span style="display: block; width: 36px; height: 1px; background: {{ accent }};"></span>
+        <span style="font-size: 12.5px; letter-spacing: 0.22em; text-transform: uppercase; color: {{ accent }}; font-weight: 600;">Community &amp; Lifestyle</span>
+      </div>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(32px, 2.6vw, 44px); line-height: 1.15; margin: 0 0 22px 0; letter-spacing: -0.01em; text-wrap: balance;">
+        Comfort Beyond <em style="font-style: italic; font-weight: 400;">the Front Door.</em>
+      </h2>
+      <p style="font-size: 15.5px; line-height: 1.75; font-weight: 300; color: #4A463F; margin: 0; text-wrap: pretty;">
+        Comfortable living extends beyond your front door. Canyon View offers convenient access to shopping, healthcare, dining, recreation, and the everyday destinations that make life in St.&nbsp;George easy to enjoy.
+      </p>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 64px 96px; align-items: center; margin-top: 72px;">
+
+      <!-- Left: lifestyle list -->
+      <div style="flex: 1 1 380px; min-width: 300px; display: flex; flex-direction: column;">
+
+        <div style="display: flex; align-items: center; gap: 22px; padding: 22px 0; border-bottom: 1px solid #E5DECF;">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="{{ accent }}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+          <span style="font-size: 16px; font-weight: 500; letter-spacing: 0.02em;">Established All-Age Community</span>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 22px; padding: 22px 0; border-bottom: 1px solid #E5DECF;">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="{{ accent }}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span style="font-size: 16px; font-weight: 500; letter-spacing: 0.02em;">Convenient Shopping</span>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 22px; padding: 22px 0; border-bottom: 1px solid #E5DECF;">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="{{ accent }}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M17 8c0-3.5-2-6-2-6s-2 2.5-2 6c0 1.9 1.1 3.4 2 3.9V22"></path><path d="M7 2v20"></path><path d="M4 2v5a3 3 0 0 0 6 0V2"></path></svg>
+          <span style="font-size: 16px; font-weight: 500; letter-spacing: 0.02em;">Dining &amp; Local Favorites</span>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 22px; padding: 22px 0; border-bottom: 1px solid #E5DECF;">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="{{ accent }}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M11 2a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2H4a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h3a2 2 0 0 1 2 2v3a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-3a2 2 0 0 1 2-2h3a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-3a2 2 0 0 1-2-2V4a2 2 0 0 0-2-2z"></path></svg>
+          <span style="font-size: 16px; font-weight: 500; letter-spacing: 0.02em;">Healthcare Access</span>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 22px; padding: 22px 0; border-bottom: 1px solid #E5DECF;">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="{{ accent }}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 22v-7"></path><path d="M9 8c0-1.7 1.3-3 3-3s3 1.3 3 3c1.7 0 3 1.3 3 3s-1.3 3-3 3c-.2 0-.5 0-.7-.1-.5 1.2-1.8 2.1-3.3 2.1s-2.8-.9-3.3-2.1c-.2.1-.5.1-.7.1-1.7 0-3-1.3-3-3s1.3-3 3-3Z"></path></svg>
+          <span style="font-size: 16px; font-weight: 500; letter-spacing: 0.02em;">Parks &amp; Recreation</span>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 22px; padding: 22px 0;">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="{{ accent }}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+          <span style="font-size: 16px; font-weight: 500; letter-spacing: 0.02em;">Central St.&nbsp;George Location</span>
+        </div>
+      </div>
+
+      <!-- Right: Nearby Destinations panel -->
+      <div style="flex: 1 1 460px; min-width: 340px; max-width: 560px;">
+        <h3 style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 28px; line-height: 1.2; margin: 0 0 8px 0; letter-spacing: -0.01em;">
+          Everything Within <em style="font-style: italic; font-weight: 400;">Easy Reach.</em>
+        </h3>
+        <span style="display: block; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #6E6A61; font-weight: 500; margin-bottom: 26px;">Nearby Destinations</span>
+
+        <div style="display: flex; flex-direction: column;">
+          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 24px; padding: 15px 0; border-bottom: 1px solid #E5DECF;">
+            <span style="font-size: 16px; font-weight: 400; color: #2A2824;">Grocery Stores</span>
+            <span style="font-size: 13.5px; font-weight: 300; color: #8C8370; letter-spacing: 0.04em; white-space: nowrap;">3&ndash;5 min</span>
+          </div>
+          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 24px; padding: 15px 0; border-bottom: 1px solid #E5DECF;">
+            <span style="font-size: 16px; font-weight: 400; color: #2A2824;">Retail Shopping</span>
+            <span style="font-size: 13.5px; font-weight: 300; color: #8C8370; letter-spacing: 0.04em; white-space: nowrap;">5&ndash;8 min</span>
+          </div>
+          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 24px; padding: 15px 0; border-bottom: 1px solid #E5DECF;">
+            <span style="font-size: 16px; font-weight: 400; color: #2A2824;">Dining</span>
+            <span style="font-size: 13.5px; font-weight: 300; color: #8C8370; letter-spacing: 0.04em; white-space: nowrap;">3&ndash;8 min</span>
+          </div>
+          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 24px; padding: 15px 0; border-bottom: 1px solid #E5DECF;">
+            <span style="font-size: 16px; font-weight: 400; color: #2A2824;">Healthcare</span>
+            <span style="font-size: 13.5px; font-weight: 300; color: #8C8370; letter-spacing: 0.04em; white-space: nowrap;">8&ndash;12 min</span>
+          </div>
+          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 24px; padding: 15px 0; border-bottom: 1px solid #E5DECF;">
+            <span style="font-size: 16px; font-weight: 400; color: #2A2824;">Parks &amp; Recreation</span>
+            <span style="font-size: 13.5px; font-weight: 300; color: #8C8370; letter-spacing: 0.04em; white-space: nowrap;">5&ndash;10 min</span>
+          </div>
+          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 24px; padding: 15px 0; border-bottom: 1px solid #E5DECF;">
+            <span style="font-size: 16px; font-weight: 400; color: #2A2824;">Downtown St.&nbsp;George</span>
+            <span style="font-size: 13.5px; font-weight: 300; color: #8C8370; letter-spacing: 0.04em; white-space: nowrap;">10 min</span>
+          </div>
+          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 24px; padding: 15px 0; border-bottom: 1px solid #E5DECF;">
+            <span style="font-size: 16px; font-weight: 400; color: #2A2824;">Costco</span>
+            <span style="font-size: 13.5px; font-weight: 300; color: #8C8370; letter-spacing: 0.04em; white-space: nowrap;">10&ndash;12 min</span>
+          </div>
+          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 24px; padding: 15px 0;">
+            <span style="font-size: 16px; font-weight: 400; color: #2A2824;">Snow Canyon State Park</span>
+            <span style="font-size: 13.5px; font-weight: 300; color: #8C8370; letter-spacing: 0.04em; white-space: nowrap;">15 min</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 88px;"></div>
+</section>
+
+<!-- Section 06 — Property Details -->
+<section data-screen-label="Property Details" id="property-details" style="background: #F7F2E9; color: #2A2824; font-family: 'Karla', sans-serif; padding: 96px 48px 0 48px;">
+  <div style="max-width: 1360px; margin: 0 auto;">
+
+    <div style="max-width: 640px;">
+      <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 26px;">
+        <span style="display: block; width: 36px; height: 1px; background: {{ accent }};"></span>
+        <span style="font-size: 12.5px; letter-spacing: 0.22em; text-transform: uppercase; color: {{ accent }}; font-weight: 600;">Property Details</span>
+      </div>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(32px, 2.6vw, 44px); line-height: 1.15; margin: 0 0 22px 0; letter-spacing: -0.01em; text-wrap: balance;">
+        Property <em style="font-style: italic; font-weight: 400;">Details.</em>
+      </h2>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 0 120px; margin-top: 56px; max-width: 1100px;">
+
+      <!-- Column 1 -->
+      <div style="flex: 1 1 380px; min-width: 300px; display: flex; flex-direction: column;">
+
+        <div style="padding: 26px 0; border-bottom: 1px solid #E5DECF;">
+          <div style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #6E6A61; font-weight: 500; margin-bottom: 10px;">Address</div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 23px; font-weight: 500; line-height: 1.4;">1450 N Dixie Downs Rd<br>Lot 56<br>St. George, UT</div>
+        </div>
+
+        <div style="padding: 26px 0; border-bottom: 1px solid #E5DECF;">
+          <div style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #6E6A61; font-weight: 500; margin-bottom: 10px;">Bedrooms</div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 23px; font-weight: 500; line-height: 1.4;">3</div>
+        </div>
+
+        <div style="padding: 26px 0; border-bottom: 1px solid #E5DECF;">
+          <div style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #6E6A61; font-weight: 500; margin-bottom: 10px;">Bathrooms</div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 23px; font-weight: 500; line-height: 1.4;">2</div>
+        </div>
+
+        <div style="padding: 26px 0; border-bottom: 1px solid #E5DECF;">
+          <div style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #6E6A61; font-weight: 500; margin-bottom: 10px;">Year Built</div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 23px; font-weight: 500; line-height: 1.4;">1988</div>
+        </div>
+
+        <div style="padding: 26px 0; border-bottom: 1px solid #E5DECF;">
+          <div style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #6E6A61; font-weight: 500; margin-bottom: 10px;">Community</div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 23px; font-weight: 500; line-height: 1.4;">Canyon View</div>
+        </div>
+
+        <div style="padding: 26px 0; border-bottom: 1px solid #E5DECF;">
+          <div style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #6E6A61; font-weight: 500; margin-bottom: 10px;">Lot Lease</div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 23px; font-weight: 500; line-height: 1.4;">Approximately $600/month</div>
+        </div>
+
+        <div style="padding: 26px 0; border-bottom: 1px solid #E5DECF;">
+          <div style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #6E6A61; font-weight: 500; margin-bottom: 10px;">Home Type</div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 23px; font-weight: 500; line-height: 1.4;">Manufactured Home (Owned)</div>
+        </div>
+
+        <div style="padding: 26px 0; border-bottom: 1px solid #E5DECF;">
+          <div style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #6E6A61; font-weight: 500; margin-bottom: 10px;">Roof</div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 23px; font-weight: 500; line-height: 1.4;">Replaced approximately 2 years ago</div>
+        </div>
+
+        <div style="padding: 26px 0;">
+          <div style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #6E6A61; font-weight: 500; margin-bottom: 10px;">Water Heater</div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 23px; font-weight: 500; line-height: 1.4;">Installed August 2025</div>
+          <div style="font-size: 15px; line-height: 1.7; font-weight: 300; color: #4A463F; max-width: 44ch; text-wrap: pretty; margin-top: 6px;">Approximately 9-year warranty remaining.</div>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div style="flex: 1 1 380px; min-width: 300px; display: flex; flex-direction: column;">
+
+        <div style="padding: 26px 0; border-bottom: 1px solid #E5DECF;">
+          <div style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #6E6A61; font-weight: 500; margin-bottom: 10px;">Covered Parking</div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 23px; font-weight: 500; line-height: 1.4;">Included</div>
+        </div>
+
+        <div style="padding: 26px 0; border-bottom: 1px solid #E5DECF;">
+          <div style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #6E6A61; font-weight: 500; margin-bottom: 10px;">Private Patio</div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 23px; font-weight: 500; line-height: 1.4;">Included</div>
+        </div>
+
+        <div style="padding: 26px 0; border-bottom: 1px solid #E5DECF;">
+          <div style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #6E6A61; font-weight: 500; margin-bottom: 10px;">HOA</div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 23px; font-weight: 500; line-height: 1.4;">None</div>
+        </div>
+
+        <div style="padding: 26px 0; border-bottom: 1px solid #E5DECF;">
+          <div style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #6E6A61; font-weight: 500; margin-bottom: 10px;">Community Approval</div>
+          <div style="font-size: 15px; line-height: 1.7; font-weight: 300; color: #4A463F; max-width: 44ch; text-wrap: pretty;">Buyer approval through Canyon View is required prior to purchase.</div>
+        </div>
+
+        <div style="padding: 26px 0; border-bottom: 1px solid #E5DECF;">
+          <div style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #6E6A61; font-weight: 500; margin-bottom: 10px;">Price</div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 23px; font-weight: 500; line-height: 1.4; font-style: italic;">Price Upon Request</div>
+        </div>
+
+        <div style="padding: 26px 0; border-bottom: 1px solid #E5DECF;">
+          <div style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #6E6A61; font-weight: 500; margin-bottom: 10px;">Square Footage</div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 23px; font-weight: 500; line-height: 1.4; font-style: italic;">To Be Verified</div>
+        </div>
+
+        <div style="padding: 26px 0; border-bottom: 1px solid #E5DECF;">
+          <div style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #6E6A61; font-weight: 500; margin-bottom: 10px;">Flooring</div>
+          <div style="font-size: 15px; line-height: 1.7; font-weight: 300; color: #4A463F; max-width: 44ch; text-wrap: pretty;">Main flooring updated approximately 4 years ago. Kitchen flooring updated approximately 2 years ago.</div>
+        </div>
+
+        <div style="padding: 26px 0; border-bottom: 1px solid #E5DECF;">
+          <div style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #6E6A61; font-weight: 500; margin-bottom: 10px;">Utilities</div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 23px; font-weight: 500; line-height: 1.4;">All electric</div>
+          <div style="font-size: 15px; line-height: 1.7; font-weight: 300; color: #4A463F; max-width: 44ch; text-wrap: pretty; margin-top: 6px;">Typical electric bill averages approximately $105/month. Actual usage varies by occupancy and season.</div>
+        </div>
+
+        <div style="padding: 26px 0;">
+          <div style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #6E6A61; font-weight: 500; margin-bottom: 10px;">Appliances</div>
+          <div style="font-size: 15px; line-height: 1.7; font-weight: 300; color: #4A463F; max-width: 44ch; text-wrap: pretty;">Seller plans to keep appliances but is willing to negotiate as part of an accepted offer.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section close -->
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 18px; padding: 84px 0 56px 0;">
+    <span style="display: block; width: 72px; height: 1px; background: #D9D2C3;"></span>
+    <p style="font-size: 13.5px; line-height: 1.7; font-weight: 300; font-style: italic; color: #6E6A61; margin: 0; max-width: 52ch; text-align: center; text-wrap: pretty; opacity: 0.85;">Additional property details and disclosures will be provided during the showing process.</p>
+  </div>
+</section>
+
+<!-- Section 07 — Closing / Private Showings -->
+<section data-screen-label="Private Showings" id="showing" style="background: #F7F2E9; color: #2A2824; font-family: 'Karla', sans-serif; padding: 150px 48px 150px 48px;">
+  <div style="max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center;">
+
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 26px;">
+      <span style="display: block; width: 36px; height: 1px; background: {{ accent }};"></span>
+      <span style="font-size: 12.5px; letter-spacing: 0.22em; text-transform: uppercase; color: {{ accent }}; font-weight: 600;">Private Showings</span>
+      <span style="display: block; width: 36px; height: 1px; background: {{ accent }};"></span>
+    </div>
+
+    <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(32px, 2.6vw, 44px); line-height: 1.15; margin: 0 0 22px 0; letter-spacing: -0.01em; text-wrap: balance;">
+      Ready for Its <em style="font-style: italic; font-weight: 400;">Next Chapter?</em>
+    </h2>
+
+    <p style="font-size: 15.5px; line-height: 1.75; font-weight: 300; color: #4A463F; margin: 0; max-width: 52ch; text-wrap: pretty;">
+      If this home feels like the right fit, private showings are available by request. Submit your preferred time, and we&rsquo;ll follow up by text to coordinate the visit.
+    </p>
+
+    <div style="display: flex; justify-content: center; margin-top: 44px;">
+      <a onClick="{{ openModal }}" style="display: inline-flex; align-items: center; background: {{ accent }}; color: #F7F2E9; text-decoration: none; cursor: pointer; font-size: 14px; letter-spacing: 0.04em; font-weight: 500; padding: 14px 26px; border-radius: 2px; white-space: nowrap; transition: filter 0.25s ease;" style-hover="filter: brightness(0.92); color: #F7F2E9;">Request a Private Showing</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Showing Request Modal -->
+<sc-if value="{{ modalOpen }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ onBackdropClick }}" style="position: fixed; inset: 0; background: rgba(42, 40, 36, 0.45); z-index: 100; display: flex; align-items: center; justify-content: center; padding: 24px; font-family: 'Karla', sans-serif; overflow-y: auto;">
+    <div onClick="{{ stopPropagation }}" style="background: #F7F2E9; color: #2A2824; width: 100%; max-width: 468px; padding: 52px 48px 48px 48px; border-radius: 2px; position: relative; max-height: 90vh; overflow-y: auto; margin: auto;">
+
+      <a onClick="{{ closeModal }}" aria-label="Close" style="position: absolute; top: 20px; right: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; color: #6E6A61; transition: color 0.25s ease;" style-hover="color: #2A2824;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+      </a>
+
+      <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+        <h3 style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 30px; line-height: 1.2; margin: 0 0 14px 0; letter-spacing: -0.01em;">
+          Request a <em style="font-style: italic; font-weight: 400;">Private Showing.</em>
+        </h3>
+        <p style="font-size: 14.5px; line-height: 1.7; font-weight: 300; color: #4A463F; margin: 0 0 32px 0; text-wrap: pretty;">
+          Please share your preferred showing time and we&rsquo;ll follow up by text to coordinate.
+        </p>
+        <p style="font-size: 13px; line-height: 1.7; font-weight: 300; color: #6E6A61; margin: -22px 0 32px 0; text-wrap: pretty;">
+          We respect your privacy. Your information is only used to coordinate a private showing.
+        </p>
+
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 11.5px; letter-spacing: 0.2em; text-transform: uppercase; color: #6E6A61; font-weight: 500;">Name&nbsp;*</span>
+            <input type="text" value="{{ formName }}" onChange="{{ onNameChange }}" style="font-family: 'Karla', sans-serif; font-size: 15px; font-weight: 300; color: #2A2824; background: transparent; border: none; border-bottom: 1px solid #C9C2B4; border-radius: 0; padding: 8px 0; outline: none; transition: border-color 0.25s ease;" style-focus="border-bottom-color: #2A2824;">
+          </label>
+
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 11.5px; letter-spacing: 0.2em; text-transform: uppercase; color: #6E6A61; font-weight: 500;">Mobile Number (Text Preferred)&nbsp;*</span>
+            <input type="tel" value="{{ formPhone }}" onChange="{{ onPhoneChange }}" style="font-family: 'Karla', sans-serif; font-size: 15px; font-weight: 300; color: #2A2824; background: transparent; border: none; border-bottom: 1px solid #C9C2B4; border-radius: 0; padding: 8px 0; outline: none; transition: border-color 0.25s ease;" style-focus="border-bottom-color: #2A2824;">
+          </label>
+
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 11.5px; letter-spacing: 0.2em; text-transform: uppercase; color: #6E6A61; font-weight: 500;">Preferred Showing Day&nbsp;*</span>
+            <select value="{{ formDay }}" onChange="{{ onDayChange }}" style="font-family: 'Karla', sans-serif; font-size: 15px; font-weight: 300; color: #2A2824; background: transparent; border: none; border-bottom: 1px solid #C9C2B4; border-radius: 0; padding: 8px 0; outline: none; cursor: pointer; transition: border-color 0.25s ease; appearance: none; -webkit-appearance: none;" style-focus="border-bottom-color: #2A2824;">
+              <option value=""></option>
+              <option value="Monday">Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+              <option value="Saturday">Saturday</option>
+              <option value="Sunday">Sunday</option>
+              <option value="Flexible">Flexible</option>
+            </select>
+          </label>
+
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 11.5px; letter-spacing: 0.2em; text-transform: uppercase; color: #6E6A61; font-weight: 500;">Preferred Time Window&nbsp;*</span>
+            <select value="{{ formTime }}" onChange="{{ onTimeChange }}" style="font-family: 'Karla', sans-serif; font-size: 15px; font-weight: 300; color: #2A2824; background: transparent; border: none; border-bottom: 1px solid #C9C2B4; border-radius: 0; padding: 8px 0; outline: none; cursor: pointer; transition: border-color 0.25s ease; appearance: none; -webkit-appearance: none;" style-focus="border-bottom-color: #2A2824;">
+              <option value=""></option>
+              <option value="Morning (9am–12pm)">Morning (9am&ndash;12pm)</option>
+              <option value="Afternoon (12pm–4pm)">Afternoon (12pm&ndash;4pm)</option>
+              <option value="Evening (4pm–7pm)">Evening (4pm&ndash;7pm)</option>
+              <option value="Flexible">Flexible</option>
+            </select>
+          </label>
+
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 11.5px; letter-spacing: 0.2em; text-transform: uppercase; color: #6E6A61; font-weight: 500;">Questions or Notes</span>
+            <textarea value="{{ formNotes }}" onChange="{{ onNotesChange }}" rows="2" style="font-family: 'Karla', sans-serif; font-size: 15px; font-weight: 300; color: #2A2824; background: transparent; border: none; border-bottom: 1px solid #C9C2B4; border-radius: 0; padding: 8px 0; outline: none; resize: vertical; transition: border-color 0.25s ease;" style-focus="border-bottom-color: #2A2824;"></textarea>
+          </label>
+
+          <sc-if value="{{ showError }}" hint-placeholder-val="{{ false }}">
+            <p style="font-size: 13px; line-height: 1.6; font-weight: 400; color: #B96F4C; margin: 0;">Please complete all required fields before submitting.</p>
+          </sc-if>
+
+          <sc-if value="{{ submitError }}" hint-placeholder-val="{{ false }}">
+            <p style="font-size: 13px; line-height: 1.6; font-weight: 400; color: #B96F4C; margin: 0;">Something went wrong. Please try again.</p>
+          </sc-if>
+
+          <div style="display: flex; justify-content: center; margin-top: 28px;">
+            <a onClick="{{ submitForm }}" style="display: inline-flex; align-items: center; background: {{ accent }}; color: #F7F2E9; cursor: pointer; text-decoration: none; font-size: 14px; letter-spacing: 0.04em; font-weight: 500; padding: 14px 32px; border-radius: 2px; white-space: nowrap; transition: filter 0.25s ease;" style-hover="filter: brightness(0.92); color: #F7F2E9;">{{ submitLabel }}</a>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+        <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px; padding: 28px 0 12px 0;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="{{ accent }}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m8.5 12.5 2.5 2.5 5-6"></path></svg>
+          <h3 style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 28px; line-height: 1.25; margin: 0; letter-spacing: -0.01em; text-wrap: balance;">
+            Thank <em style="font-style: italic; font-weight: 400;">You.</em>
+          </h3>
+          <p style="font-size: 14.5px; line-height: 1.7; font-weight: 300; color: #4A463F; margin: 0; max-width: 38ch; text-wrap: pretty;">Your showing request has been received. We&rsquo;ll reach out by text soon to coordinate a convenient time.</p>
+          <a onClick="{{ closeModal }}" style="font-size: 12.5px; letter-spacing: 0.22em; text-transform: uppercase; color: #6E6A61; font-weight: 500; cursor: pointer; text-decoration: none; margin-top: 6px; transition: color 0.25s ease;" style-hover="color: #2A2824;">Close</a>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;accent&quot;: { &quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#7C8B72&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;options&quot;: [&quot;#7C8B72&quot;, &quot;#B96F4C&quot;, &quot;#8C8370&quot;], &quot;section&quot;: &quot;Style&quot; }
+}">
+class Component extends DCLogic {
+  state = {
+    modalOpen: false,
+    submitted: false,
+    submitting: false,
+    submitError: false,
+    showError: false,
+    formName: '',
+    formPhone: '',
+    formDay: '',
+    formTime: '',
+    formNotes: '',
+  };
+
+  setField(key, e) {
+    this.setState({ [key]: e.target.value, showError: false });
+  }
+
+  renderVals() {
+    const s = this.state;
+    return {
+      accent: this.props.accent ?? '#7C8B72',
+      modalOpen: s.modalOpen,
+      submitted: s.submitted,
+      notSubmitted: !s.submitted,
+      showError: s.showError,
+      formName: s.formName,
+      formPhone: s.formPhone,
+      formDay: s.formDay,
+      formTime: s.formTime,
+      formNotes: s.formNotes,
+      openModal: () => {
+        this.setState({ modalOpen: true, submitted: false, showError: false });
+        document.body.style.overflow = 'hidden';
+      },
+      closeModal: () => {
+        this.setState({ modalOpen: false });
+        document.body.style.overflow = '';
+      },
+      onBackdropClick: (e) => {
+        if (e.target === e.currentTarget) {
+          this.setState({ modalOpen: false });
+          document.body.style.overflow = '';
+        }
+      },
+      stopPropagation: (e) => e.stopPropagation(),
+      onNameChange: (e) => this.setField('formName', e),
+      onPhoneChange: (e) => this.setField('formPhone', e),
+      onDayChange: (e) => this.setField('formDay', e),
+      onTimeChange: (e) => this.setField('formTime', e),
+      onNotesChange: (e) => this.setField('formNotes', e),
+      submitting: s.submitting,
+      submitError: s.submitError,
+      submitLabel: s.submitting ? 'Submitting...' : 'Submit Request',
+      submitForm: async () => {
+        if (this.state.submitting) return;
+        const st = this.state;
+        const ok = st.formName.trim() && st.formPhone.trim() && st.formDay && st.formTime;
+        if (!ok) {
+          this.setState({ showError: true });
+          return;
+        }
+        this.setState({ submitting: true, showError: false, submitError: false });
+        try {
+          const res = await fetch('https://script.google.com/macros/s/AKfycbxc2XAYKwRBqswBy1So4rncLlu7aAuuvRuyiMN4EeLKEQRPBwSTkS6IZo0gff2tNsY/exec', {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({
+              name: st.formName.trim(),
+              phone: st.formPhone.trim(),
+              day: st.formDay,
+              time: st.formTime,
+              notes: st.formNotes.trim(),
+            }),
+          });
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          this.setState({ submitting: false, submitted: true });
+        } catch (err) {
+          this.setState({ submitting: false, submitError: true });
+        }
+      },
+    };
+  }
+}
+</script>
+</body>
+</html>
