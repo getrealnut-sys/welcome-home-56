@@ -48,7 +48,7 @@
       </p>
       <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-top: 6px;">
         <a href="#home" style="display: inline-flex; align-items: center; background: {{ accent }}; color: #F7F2E9; text-decoration: none; font-size: 14px; letter-spacing: 0.04em; font-weight: 500; padding: 14px 26px; border-radius: 2px; white-space: nowrap; transition: filter 0.25s ease;" style-hover="filter: brightness(0.92); color: #F7F2E9;">View the Home</a>
-        <a href="#showing" style="display: inline-flex; align-items: center; color: #2A2824; text-decoration: none; font-size: 14px; letter-spacing: 0.04em; font-weight: 500; padding: 13px 26px; border: 1px solid #C9C2B4; border-radius: 2px; white-space: nowrap; transition: border-color 0.25s ease;" style-hover="border-color: #2A2824; color: #2A2824;">Schedule a Private Showing</a>
+        <a onClick="{{ openModal }}" style="display: inline-flex; align-items: center; color: #2A2824; text-decoration: none; cursor: pointer; font-size: 14px; letter-spacing: 0.04em; font-weight: 500; padding: 13px 26px; border: 1px solid #C9C2B4; border-radius: 2px; white-space: nowrap; transition: border-color 0.25s ease;" style-hover="border-color: #2A2824; color: #2A2824;">Schedule a Private Showing</a>
       </div>
     </div>
 
@@ -447,7 +447,7 @@
 </section>
 
 <!-- Section 07 — Closing / Private Showings -->
-<section data-screen-label="Private Showings" id="showing" style="background: #F7F2E9; color: #2A2824; font-family: 'Karla', sans-serif; padding: 140px 48px 120px 48px;">
+<section data-screen-label="Private Showings" id="showing" style="background: #F7F2E9; color: #2A2824; font-family: 'Karla', sans-serif; padding: 150px 48px 150px 48px;">
   <div style="max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center;">
 
     <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 26px;">
@@ -464,36 +464,188 @@
       If this home feels like the right fit, private showings are available by request. Submit your preferred time, and we&rsquo;ll follow up by text to coordinate the visit.
     </p>
 
-    <div style="display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; margin-top: 40px;">
-      <a href="#showing" style="display: inline-flex; align-items: center; background: {{ accent }}; color: #F7F2E9; text-decoration: none; font-size: 14px; letter-spacing: 0.04em; font-weight: 500; padding: 14px 26px; border-radius: 2px; white-space: nowrap; transition: filter 0.25s ease;" style-hover="filter: brightness(0.92); color: #F7F2E9;">Request a Private Tour</a>
-      <a href="#showing" style="display: inline-flex; align-items: center; color: #2A2824; text-decoration: none; font-size: 14px; letter-spacing: 0.04em; font-weight: 500; padding: 13px 26px; border: 1px solid #C9C2B4; border-radius: 2px; white-space: nowrap; transition: border-color 0.25s ease;" style-hover="border-color: #2A2824; color: #2A2824;">Download Property Brochure</a>
+    <div style="display: flex; justify-content: center; margin-top: 44px;">
+      <a onClick="{{ openModal }}" style="display: inline-flex; align-items: center; background: {{ accent }}; color: #F7F2E9; text-decoration: none; cursor: pointer; font-size: 14px; letter-spacing: 0.04em; font-weight: 500; padding: 14px 26px; border-radius: 2px; white-space: nowrap; transition: filter 0.25s ease;" style-hover="filter: brightness(0.92); color: #F7F2E9;">Request a Private Showing</a>
     </div>
 
-    <div style="display: flex; flex-direction: column; align-items: center; gap: 18px; margin-top: 64px;">
-      <svg width="156" height="156" viewBox="0 0 132 132" fill="none" style="display: block;">
-        <rect x="1" y="1" width="130" height="130" stroke="#D9D2C3" stroke-width="1"></rect>
-        <rect x="18" y="18" width="26" height="26" stroke="#8C8370" stroke-width="1.2"></rect>
-        <rect x="27" y="27" width="8" height="8" fill="#8C8370"></rect>
-        <rect x="88" y="18" width="26" height="26" stroke="#8C8370" stroke-width="1.2"></rect>
-        <rect x="97" y="27" width="8" height="8" fill="#8C8370"></rect>
-        <rect x="18" y="88" width="26" height="26" stroke="#8C8370" stroke-width="1.2"></rect>
-        <rect x="27" y="97" width="8" height="8" fill="#8C8370"></rect>
-        <path d="M58 22h6M70 22h10M54 32h8M68 32h6M80 36h8M58 42h6M54 54h10M70 58h8M86 54h10M104 54h8M22 58h8M36 54h6M22 70h10M38 68h8M54 68h6M66 66h10M82 70h6M94 66h8M108 68h6M54 80h8M68 78h6M80 82h10M96 78h6M58 94h6M70 92h10M86 96h8M100 92h6M54 106h10M70 104h6M82 108h8M96 104h10" stroke="#D9D2C3" stroke-width="4" stroke-linecap="butt"></path>
-      </svg>
-      <p style="font-size: 13px; line-height: 1.7; font-weight: 300; color: #6E6A61; margin: 0; max-width: 34ch; text-wrap: pretty;">Scan to view the full property presentation and request a private tour.</p>
-      <p style="font-size: 12.5px; line-height: 1.7; font-weight: 300; font-style: italic; color: #6E6A61; margin: 0; opacity: 0.85;">Private showings are scheduled by appointment.</p>
-    </div>
   </div>
 </section>
 
+
+<!-- Showing Request Modal -->
+<sc-if value="{{ modalOpen }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ onBackdropClick }}" style="position: fixed; inset: 0; background: rgba(42, 40, 36, 0.45); z-index: 100; display: flex; align-items: center; justify-content: center; padding: 24px; font-family: 'Karla', sans-serif; overflow-y: auto;">
+    <div onClick="{{ stopPropagation }}" style="background: #F7F2E9; color: #2A2824; width: 100%; max-width: 468px; padding: 52px 48px 48px 48px; border-radius: 2px; position: relative; max-height: 90vh; overflow-y: auto; margin: auto;">
+
+      <a onClick="{{ closeModal }}" aria-label="Close" style="position: absolute; top: 20px; right: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; color: #6E6A61; transition: color 0.25s ease;" style-hover="color: #2A2824;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+      </a>
+
+      <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+        <h3 style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 30px; line-height: 1.2; margin: 0 0 14px 0; letter-spacing: -0.01em;">
+          Request a <em style="font-style: italic; font-weight: 400;">Private Showing.</em>
+        </h3>
+        <p style="font-size: 14.5px; line-height: 1.7; font-weight: 300; color: #4A463F; margin: 0 0 32px 0; text-wrap: pretty;">
+          Please share your preferred showing time and we&rsquo;ll follow up by text to coordinate.
+        </p>
+        <p style="font-size: 13px; line-height: 1.7; font-weight: 300; color: #6E6A61; margin: -22px 0 32px 0; text-wrap: pretty;">
+          We respect your privacy. Your information is only used to coordinate a private showing.
+        </p>
+
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 11.5px; letter-spacing: 0.2em; text-transform: uppercase; color: #6E6A61; font-weight: 500;">Name&nbsp;*</span>
+            <input type="text" value="{{ formName }}" onChange="{{ onNameChange }}" style="font-family: 'Karla', sans-serif; font-size: 15px; font-weight: 300; color: #2A2824; background: transparent; border: none; border-bottom: 1px solid #C9C2B4; border-radius: 0; padding: 8px 0; outline: none; transition: border-color 0.25s ease;" style-focus="border-bottom-color: #2A2824;">
+          </label>
+
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 11.5px; letter-spacing: 0.2em; text-transform: uppercase; color: #6E6A61; font-weight: 500;">Mobile Number (Text Preferred)&nbsp;*</span>
+            <input type="tel" value="{{ formPhone }}" onChange="{{ onPhoneChange }}" style="font-family: 'Karla', sans-serif; font-size: 15px; font-weight: 300; color: #2A2824; background: transparent; border: none; border-bottom: 1px solid #C9C2B4; border-radius: 0; padding: 8px 0; outline: none; transition: border-color 0.25s ease;" style-focus="border-bottom-color: #2A2824;">
+          </label>
+
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 11.5px; letter-spacing: 0.2em; text-transform: uppercase; color: #6E6A61; font-weight: 500;">Preferred Showing Day&nbsp;*</span>
+            <select value="{{ formDay }}" onChange="{{ onDayChange }}" style="font-family: 'Karla', sans-serif; font-size: 15px; font-weight: 300; color: #2A2824; background: transparent; border: none; border-bottom: 1px solid #C9C2B4; border-radius: 0; padding: 8px 0; outline: none; cursor: pointer; transition: border-color 0.25s ease; appearance: none; -webkit-appearance: none;" style-focus="border-bottom-color: #2A2824;">
+              <option value=""></option>
+              <option value="Monday">Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+              <option value="Saturday">Saturday</option>
+              <option value="Sunday">Sunday</option>
+              <option value="Flexible">Flexible</option>
+            </select>
+          </label>
+
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 11.5px; letter-spacing: 0.2em; text-transform: uppercase; color: #6E6A61; font-weight: 500;">Preferred Time Window&nbsp;*</span>
+            <select value="{{ formTime }}" onChange="{{ onTimeChange }}" style="font-family: 'Karla', sans-serif; font-size: 15px; font-weight: 300; color: #2A2824; background: transparent; border: none; border-bottom: 1px solid #C9C2B4; border-radius: 0; padding: 8px 0; outline: none; cursor: pointer; transition: border-color 0.25s ease; appearance: none; -webkit-appearance: none;" style-focus="border-bottom-color: #2A2824;">
+              <option value=""></option>
+              <option value="Morning (9am–12pm)">Morning (9am&ndash;12pm)</option>
+              <option value="Afternoon (12pm–4pm)">Afternoon (12pm&ndash;4pm)</option>
+              <option value="Evening (4pm–7pm)">Evening (4pm&ndash;7pm)</option>
+              <option value="Flexible">Flexible</option>
+            </select>
+          </label>
+
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 11.5px; letter-spacing: 0.2em; text-transform: uppercase; color: #6E6A61; font-weight: 500;">Questions or Notes</span>
+            <textarea value="{{ formNotes }}" onChange="{{ onNotesChange }}" rows="2" style="font-family: 'Karla', sans-serif; font-size: 15px; font-weight: 300; color: #2A2824; background: transparent; border: none; border-bottom: 1px solid #C9C2B4; border-radius: 0; padding: 8px 0; outline: none; resize: vertical; transition: border-color 0.25s ease;" style-focus="border-bottom-color: #2A2824;"></textarea>
+          </label>
+
+          <sc-if value="{{ showError }}" hint-placeholder-val="{{ false }}">
+            <p style="font-size: 13px; line-height: 1.6; font-weight: 400; color: #B96F4C; margin: 0;">Please complete all required fields before submitting.</p>
+          </sc-if>
+
+          <sc-if value="{{ submitError }}" hint-placeholder-val="{{ false }}">
+            <p style="font-size: 13px; line-height: 1.6; font-weight: 400; color: #B96F4C; margin: 0;">Something went wrong. Please try again.</p>
+          </sc-if>
+
+          <div style="display: flex; justify-content: center; margin-top: 28px;">
+            <a onClick="{{ submitForm }}" style="display: inline-flex; align-items: center; background: {{ accent }}; color: #F7F2E9; cursor: pointer; text-decoration: none; font-size: 14px; letter-spacing: 0.04em; font-weight: 500; padding: 14px 32px; border-radius: 2px; white-space: nowrap; transition: filter 0.25s ease;" style-hover="filter: brightness(0.92); color: #F7F2E9;">{{ submitLabel }}</a>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+        <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px; padding: 28px 0 12px 0;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="{{ accent }}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m8.5 12.5 2.5 2.5 5-6"></path></svg>
+          <h3 style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 28px; line-height: 1.25; margin: 0; letter-spacing: -0.01em; text-wrap: balance;">
+            Thank <em style="font-style: italic; font-weight: 400;">You.</em>
+          </h3>
+          <p style="font-size: 14.5px; line-height: 1.7; font-weight: 300; color: #4A463F; margin: 0; max-width: 38ch; text-wrap: pretty;">Your showing request has been received. We&rsquo;ll reach out by text soon to coordinate a convenient time.</p>
+          <a onClick="{{ closeModal }}" style="font-size: 12.5px; letter-spacing: 0.22em; text-transform: uppercase; color: #6E6A61; font-weight: 500; cursor: pointer; text-decoration: none; margin-top: 6px; transition: color 0.25s ease;" style-hover="color: #2A2824;">Close</a>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+</sc-if>
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{
   &quot;accent&quot;: { &quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#7C8B72&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;options&quot;: [&quot;#7C8B72&quot;, &quot;#B96F4C&quot;, &quot;#8C8370&quot;], &quot;section&quot;: &quot;Style&quot; }
 }">
 class Component extends DCLogic {
+  state = {
+    modalOpen: false,
+    submitted: false,
+    submitting: false,
+    submitError: false,
+    showError: false,
+    formName: '',
+    formPhone: '',
+    formDay: '',
+    formTime: '',
+    formNotes: '',
+  };
+
+  setField(key, e) {
+    this.setState({ [key]: e.target.value, showError: false });
+  }
+
   renderVals() {
+    const s = this.state;
     return {
       accent: this.props.accent ?? '#7C8B72',
+      modalOpen: s.modalOpen,
+      submitted: s.submitted,
+      notSubmitted: !s.submitted,
+      showError: s.showError,
+      formName: s.formName,
+      formPhone: s.formPhone,
+      formDay: s.formDay,
+      formTime: s.formTime,
+      formNotes: s.formNotes,
+      openModal: () => {
+        this.setState({ modalOpen: true, submitted: false, showError: false });
+        document.body.style.overflow = 'hidden';
+      },
+      closeModal: () => {
+        this.setState({ modalOpen: false });
+        document.body.style.overflow = '';
+      },
+      onBackdropClick: (e) => {
+        if (e.target === e.currentTarget) {
+          this.setState({ modalOpen: false });
+          document.body.style.overflow = '';
+        }
+      },
+      stopPropagation: (e) => e.stopPropagation(),
+      onNameChange: (e) => this.setField('formName', e),
+      onPhoneChange: (e) => this.setField('formPhone', e),
+      onDayChange: (e) => this.setField('formDay', e),
+      onTimeChange: (e) => this.setField('formTime', e),
+      onNotesChange: (e) => this.setField('formNotes', e),
+      submitting: s.submitting,
+      submitError: s.submitError,
+      submitLabel: s.submitting ? 'Submitting...' : 'Submit Request',
+      submitForm: async () => {
+        if (this.state.submitting) return;
+        const st = this.state;
+        const ok = st.formName.trim() && st.formPhone.trim() && st.formDay && st.formTime;
+        if (!ok) {
+          this.setState({ showError: true });
+          return;
+        }
+        this.setState({ submitting: true, showError: false, submitError: false });
+        try {
+          const res = await fetch('https://script.google.com/macros/s/AKfycbxc2XAYKwRBqswBy1So4rncLlu7aAuuvRuyiMN4EeLKEQRPBwSTkS6IZo0gff2tNsY/exec', {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({
+              name: st.formName.trim(),
+              phone: st.formPhone.trim(),
+              day: st.formDay,
+              time: st.formTime,
+              notes: st.formNotes.trim(),
+            }),
+          });
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          this.setState({ submitting: false, submitted: true });
+        } catch (err) {
+          this.setState({ submitting: false, submitError: true });
+        }
+      },
     };
   }
 }
