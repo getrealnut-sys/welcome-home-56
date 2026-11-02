@@ -658,7 +658,7 @@ class Component extends DCLogic {
         }
         this.setState({ submitting: true, showError: false, submitError: false });
         try {
-          const res = await fetch('https://script.google.com/macros/s/AKfycbxc2XAYKwRBqswBy1So4rncLlu7aAuuvRuyiMN4EeLKEQRPBwSTkS6IZo0gff2tNsY/exec', {
+          const res = await fetch('https://script.google.com/macros/s/AKfycbwoR5_aJJEoUsNUrKWr7-s8AzZqUSeCqOOqGZtAxsZBk7StCUdYg8z7dqGTiYnyaI8s8A/exec', {
             method: 'POST',
             headers: { 'Content-Type': 'text/plain;charset=utf-8' },
             body: JSON.stringify({
